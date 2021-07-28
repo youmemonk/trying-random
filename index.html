@@ -5,20 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Entities & Semantic tags</title>
+    <title>Document</title>
+
+    <!-- CSS ALSO TAKES PRECEDANCE but you can add important tag, and it will take precedance -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <style>
+        p {
+            color: greenyellow !important;
+            /* This important tag ranks up */
+            background-color: orange;
+        }
+    </style>
 </head>
 
 <body>
-    <h3>HTML Entities</h3>
-    <div class="container">Lorem ipsum dolor sit amet.</div>
-    <div class="container">Lorem, ipsum dolor. &nbsp; Adding Nonbreaking space here by writing nbsp in the line.</div>
-    <div class="anotherone">I want to write paragraph tag here. &lt;p&gt; </div>
-    <div class="trying">
-        Poung is written like this &pound;.
-        Copyright is written like &copy;.
-        Empty character is written like this &#8203
-    </div>
-
+    <h3>Tutorial on CSS</h3>
+    <p>This will teach you everything about HTML and CSS.</p>
+    <p style="color: red; background-color: yellow;">This will teach you everything about HTML and CSS.</p>
 </body>
 
 </html>
