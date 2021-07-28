@@ -5,55 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Forms</title>
+    <title>Inline and Block Elements</title>
 </head>
 
 <body>
-    <form action="backend.php">
-        <label for="name">Name: </label>
-        <div>
-            <input type="text" id="name">
-        </div>
-        <br>
-        <div>
-            Roll: <input type="text">
-        </div>
-        <br>
-        <div>
-            Email: <input type="email" name="myEmail">
-        </div>
-        <br>
-        <div>
-            <input type="datetime-local" name="myTime">
-        </div>
-        <br>
-        <div>
-            Are you Eligible? <input type="checkbox" name="myElig" checked>
-        </div>
-        <br>
-        <div>
-            Gender: Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender"> Male<input
-                type="radio" name="myGender">
-        </div>
-        <br>
-        <div>
-            Write about yourself here: <br><textarea name="mytext" cols="30" rows="10"></textarea>
-        </div>
-        <br>
-        <div>
-            <label for="car">Enter Car Name : </label>
-            <select name="myCar" id="car">
-                <option value="ab">Mercedes</option>
-                <option value="ab">Benz</option>
-                <option value="ab" selected>Maruti 800</option>
-            </select>
-        </div>
-        <br>
-        <div>
-            <input type="submit" value="Submit Now">
-            <input type="reset" value="Reset Now">
-        </div>
-    </form>
+    <!-- <p> is a Block element while <span> is a inline ELement.  -->
+    <!-- Inline and Block Elements -->
+    <h3>Inline and Block Elements</h3>
+    <p style="border: 2px solid red;">paragraph 1</p>
+    <p>paragraph 2</p>
+
+    <span style="border: 2px solid red;">span 1</span>
+    <span>span 2</span>
+
+
+    <!-- ID and Class  -->
+    <h3>ID and Class</h3>
+    <div id="mainbox" class="redBG blackborder">
+        <!-- can add multiple names in class meaning multiple classes can be applied to a tag -->
+        this is mainbox
+    </div>
+
+    <!-- . is for class  -->
+    <!-- # is for id -->
+    <span class="comment">Just added span.class and this was made</span><br>
+    <span id="idname">Just wrote span#idname and this was made</span><br>
+
+    <!-- Emmet is a faster way to write things -->
+    <!-- You can also add multiple . (dots) to create complex tags made simple -->
+    <div class="redBG blackborder anotherclass" id="Id">This was made by writing div.redBG.blackborder.anotherclass#ID
+        and, this was made in a single line.</div>
+
+    <!-- Emmet takes div tag as default -->
+    <!-- It means I can simply write .classname.etc and no need to write div.blahblah -->
+    <div class="classname etc">This was simply achieved by making .classname.etc and a div was made here.</div>
 </body>
 
 </html>
