@@ -5,48 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selectors</title>
+    <title>Chrome Debugger tools & CSS fonts</title>
+
+    <!-- <style>
+        p {
+            background-color: azure;
+            font-style: italic;
+            color: purple;
+        }
+        h3{
+            background-color: #dea8a8;
+        }
+    </style> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
 
     <style>
-        /* element selector */
-        p{
-            border: 2px solid greenyellow;
-        }
-        /* id selector */
-        #redElement{
-            color: red;
+        p {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 23px; /*pixel = 1/96th of inch*/
+            line-height: 1.2em; /*size of em depends on the size of the parent | em = (constant) * font-size*/
+            /* font-weight: bold; */
         }
 
-        /* class selector */
-        .bgBlue{
-            background-color: aquamarine;
-        }
-
-            /* grouping selector */
-        footer, span{
-            background-color: pink;
+        span{
+            font-weight: bold;
+            font-style: oblique;
         }
     </style>
 </head>
 
 <body>
-    <h3>CSS Selectors</h3>
-    <p id="redElement">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium molestiae qui tenetur eligendi recusandae
-        reprehenderit et eius reiciendis expedita voluptates rerum perspiciatis magnam, consequuntur natus deleniti
-        dolores nesciunt facere! Beatae nemo quibusdam explicabo harum deleniti repudiandae quasi sit quam iste!
-    </p>
+    <h3>Chrome Debugger Tools</h3>
+    <p>This is working for working developer tools.</p>
+    <p>Addding this to firefox browser windows</p>
 
-    <p class="bgBlue">Lorem ipsum dolor sit amet.</p>
-
-    <div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, assumenda!
-        </p>
-        <span>This is span.</span>
-    </div>
-
-    <footer>This is footer.</footer>
+    <h3>CSS fonts</h3>
+    <p>Paragraph to play with css fonts. <span>Solidify</span> this.</p>
 </body>
 
 </html>
