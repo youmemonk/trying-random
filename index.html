@@ -5,56 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Model</title>
+    <title>Pseduo Selectors and more designing</title>
 
     <style>
-        * {
-            /* Universal CSS Selector */
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body{
-            background-color: aquamarine;
-        }
-
         .container {
-            background-color: rgb(212, 124, 205);
-            border: 3px solid rebeccapurple;
-            /* padding-top: 69px; */
-            /* padding-bottom: 69px; */
-            /* padding-left: 100px; */
-            /* We can set the top bottom right and left margin/padding in this easier way */
+            border: 2px solid red;
+            background-color: greenyellow;
+            padding: 34px;
+            margin: auto;
+            width: 666px;
+        }
 
-            /* padding: 20px 40px 50px 70px;  */
-            /* padding: top right bottom left TRBL */
-            padding: 30px 40px;
-            /* padding: y(top/bottom) x(left/right) */
-            margin: 30px;
-            border-radius: 23px;
-            box-sizing: border-box;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: rgb(105, 38, 136);
+            background-color: rgb(123, 140, 172);
+        }
+
+        a:visited {
+            background-color: pink;
+        }
+
+        a:active{
+            background-color: darkblue;
+        }
+
+        .btn {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: beige;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+
+        .btn:hover{
+            background-color: darkmagenta;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <h3>This is a heading!</h3>
-        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quos odio dolore tempore ad, velit
-            error reiciendis nesciunt omnis facere modi molestias et non tempora?</p>
-    </div>
+    <div class="container" id="cont1">
+        <h1>This is heading</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, asperiores veniam exercitationem fugit
+            aspernatur porro expedita accusamus voluptate nesciunt reiciendis vitae nulla possimus cumque! At esse
+            minima
+            exercitationem alias quos?
+        </p>
 
-    <div class="container">
-        <h3>This is a heading!</h3>
-        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quos odio dolore tempore ad, velit
-            error reiciendis nesciunt omnis facere modi molestias et non tempora?</p>
-    </div>
-
-    <div class="container">
-        <h3>This is a heading!</h3>
-        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quos odio dolore tempore ad, velit
-            error reiciendis nesciunt omnis facere modi molestias et non tempora?</p>
+        <a href="https://www.google.com" target="_" class="button" >Read More</a>
+        <button class="btn">Contact Us</button>
     </div>
 
 </body>
